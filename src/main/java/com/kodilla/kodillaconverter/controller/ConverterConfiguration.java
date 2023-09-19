@@ -12,4 +12,8 @@ public class ConverterConfiguration {
         return new MyCustomSlashConverter();
     }
 
+    @Bean
+    public HttpMessageConverter<Object> customSpaceConverter() {
+        return new MyCustomSpaceConverter();
+    }
 }
